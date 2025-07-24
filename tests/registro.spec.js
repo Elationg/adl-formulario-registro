@@ -21,7 +21,7 @@ test.afterEach(async () => {
 });
 
 test.afterAll(async () => {
-  console.log('Pruebas de registro finalizadas');
+  console.log('Las pruebas de registro han finalizado');
 });
 
 // Test inicial para validar carga de la página
