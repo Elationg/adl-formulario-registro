@@ -1,0 +1,84 @@
+[
+  {
+    "exito": true,
+    "titulo": "Registro Exitoso",
+    "nombre": "Juan Perez",
+    "email": "juan.perez@example.com",
+    "clave": "ClaveSegura123",
+    "confirmar": "ClaveSegura123",
+    "erroresEsperados": []
+  },
+  {
+    "exito": false,
+    "titulo": "Registro Fallido por Falta de Datos Obligatorios",
+    "nombre": "",
+    "email": "test@example.com",
+    "clave": "MiClave123",
+    "confirmar": "MiClave123",
+    "erroresEsperados": [
+      "El nombre es obligatorio.",
+      "Por favor, corrige los errores en el formulario."
+    ]
+  },
+  {
+    "exito": false,
+    "titulo": "Registro Fallido claves no coinciden",
+    "nombre": "Juan Perez",
+    "email": "test@example.com",
+    "clave": "MiClave1234",
+    "confirmar": "MiClave123",
+    "erroresEsperados": [
+      "La clave y la confirmación de clave no coinciden.",
+      "Por favor, corrige los errores en el formulario."
+    ]
+  },
+  {
+    "exito": false,
+    "titulo": "Registro Fallido claves no coinciden ni cumplen condiciones",
+    "nombre": "Juan Perez",
+    "email": "test@example.com",
+    "clave": "miclave1234",
+    "confirmar": "miclave123",
+    "erroresEsperados": [
+      "La clave y la confirmación de clave no coinciden.",
+      "La clave debe tener al menos 10 caracteres, incluyendo mayúsculas, minúsculas y números.",
+      "Por favor, corrige los errores en el formulario."
+    ]
+  },
+  {
+    "exito": false,
+    "titulo": "Registro Fallido clave no cumple condiciones (extensión)",
+    "nombre": "Juan Perez",
+    "email": "test@example.com",
+    "clave": "MiClave",
+    "confirmar": "MiClave",
+    "erroresEsperados": [
+      "La clave debe tener al menos 10 caracteres, incluyendo mayúsculas, minúsculas y números.",
+      "Por favor, corrige los errores en el formulario."
+    ]
+  },
+  {
+    "exito": false,
+    "titulo": "Registro Fallido clave no cumple condiciones (solo minusculas)",
+    "nombre": "Juan Perez",
+    "email": "test@example.com",
+    "clave": "claveclaveclave",
+    "confirmar": "claveclaveclave",
+    "erroresEsperados": [
+      "La clave debe tener al menos 10 caracteres, incluyendo mayúsculas, minúsculas y números.",
+      "Por favor, corrige los errores en el formulario."
+    ]
+  },
+  {
+    "exito": false,
+    "titulo": "Registro Fallido clave no cumple condiciones (solo números)",
+    "nombre": "Juan Perez",
+    "email": "test@example.com",
+    "clave": "1234567890",
+    "confirmar": "1234567890",
+    "erroresEsperados": [
+      "La clave debe tener al menos 10 caracteres, incluyendo mayúsculas, minúsculas y números.",
+      "Por favor, corrige los errores en el formulario."
+    ]
+  }
+]
