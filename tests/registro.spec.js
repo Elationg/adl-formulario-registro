@@ -7,7 +7,7 @@ const BASE_URL = 'http://localhost:5173';
 let registro;
 
 test.beforeAll(async () => {
-  console.log('🔧 Iniciando pruebas de registro...');
+  console.log('Iniciando pruebas de registro...');
 });
 
 test.beforeEach(async ({ page }) => {
@@ -17,11 +17,11 @@ test.beforeEach(async ({ page }) => {
 });
 
 test.afterEach(async () => {
-  console.log('✅ Prueba ejecutada');
+  console.log('Prueba ejecutada');
 });
 
 test.afterAll(async () => {
-  console.log('🏁 Pruebas de registro finalizadas');
+  console.log('Pruebas de registro finalizadas');
 });
 
 // Test inicial para validar carga de la página
